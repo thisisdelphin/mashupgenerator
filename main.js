@@ -103,5 +103,6 @@ document.getElementById('button').onclick = function() {
   generateTonalite();
   generateMedium();
   document.getElementById("generation").style.visibility = "visible";
+  document.getElementById("button").style.marginTop = "100px";
 
 };

@@ -21,6 +21,7 @@ h2 {
 
 p {
   color: #aaa;
+  font-size: 12px;
 }
 
 button {
@@ -29,8 +30,14 @@ button {
   color: #fff;
   padding: 8px;
   border-radius: 200px;
-  margin-top: 20px;
+  margin-top: 180px;
   width: 300px;
   font-size: 24px;
   font-weight: 400;
+  transition: background-color .2s ease;
+}
+
+button:hover {
+  background: #666;
+  transition: background-color .2s ease;
 }
