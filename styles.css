@@ -1,0 +1,36 @@
+
+body {
+  font-family: sans-serif;
+  color: #535353;
+  font-weight: 200;
+}
+
+#content {
+  text-align: center;
+}
+
+#generation {
+  visibility: hidden;
+  margin: 0 auto;
+  width: 600px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  color: #aaa;
+}
+
+button {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 200px;
+  margin-top: 20px;
+  width: 300px;
+  font-size: 24px;
+  font-weight: 400;
+}
