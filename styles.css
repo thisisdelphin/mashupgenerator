@@ -6,7 +6,7 @@ body {
 }
 
 #content {
-  text-align: center;
+    text-align: center;
 }
 
 #generation {
@@ -40,4 +40,51 @@ button {
 button:hover {
   background: #666;
   transition: background-color .2s ease;
+}
+
+#generatedForm {
+  margin-top: 100px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+input[type=url] {
+  color: #666;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px;
+  border: none;
+  border-bottom: 2px dashed #333;
+  background: #eee;
+}
+
+input[type=submit] {
+  background: #666;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 200px;
+  width: 18%;
+  font-size: 12px;
+  display: inline;
+  font-weight: 400;
+}
+
+form p {
+  display: inline;
+}
+
+textarea {
+  color: #666;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px;
+  border: none;
+  border-bottom: 2px dashed #333;
+  font-size: 12px;
+  background: #eee;
+  font-family: sans-serif;
 }

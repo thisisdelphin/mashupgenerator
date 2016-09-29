@@ -63,7 +63,7 @@ function generateAction(){
 
 function generateServices(){
   var div = document.getElementById("generatedServices");
-  x = document.getElementById("generatedAction");
+  var x = document.getElementById("generatedAction");
 
   if ( x.innerHTML === "Frankenstein Mashup" ){
     div.innerHTML =
@@ -86,7 +86,7 @@ function generateTonalite(){
 
 function generateMedium(){
   var div = document.getElementById("generatedMedium");
-  x = document.getElementById("generatedAction");
+  var x = document.getElementById("generatedAction");
 
   if ( x.innerHTML === "MIDI" ){
     div.innerHTML =
@@ -97,12 +97,39 @@ function generateMedium(){
   }
 }
 
+function generateForm(){
+  var div = document.getElementById("form");
+  var x = document.getElementById("generatedMedium");
+  if( x.innerHTML === "son") {
+    div.innerHTML =
+    '<form><p>Bientôt disponible</p><input type="url" value="url du son Soundcloud"><input type="submit" value="Envoyer" disabled></form>';
+  } else if ( x.innerHTML === "vidéo" ) {
+    console.log("vidéo");
+    div.innerHTML =
+    '<form><p>Bientôt disponible</p><input type="url" value="url de la vidéo YouTube"><input type="submit" value="Envoyer" disabled></form>';
+  } else if ( x.innerHTML === "image") {
+    console.log("image");
+    div.innerHTML =
+    '<form><p>Bientôt disponible</p><input type="url" value="url de l\'image"><input type="submit" value="Envoyer" disabled></form>';
+  } else if ( x.innerHTML === "gif") {
+    console.log("gif");
+    div.innerHTML =
+    '<form><p>Bientôt disponible</p><input type="url" value="url de la page Giphy"><input type="submit" value="Envoyer" disabled></form>';
+    '<form><input type="url" value="url de la page Giphy">  <input type="submit" value="Envoyer"></form>';
+  } else if (x.innerHTML === "texte") {
+    console.log("texte");
+    div.innerHTML =
+    '<form><p>Bientôt disponible</p><textarea>votre texte</textarea><input type="submit" value="Envoyer" disabled></form>';
+  }
+}
+
 document.getElementById('button').onclick = function() {
   generateAction();
   generateServices();
   generateTonalite();
   generateMedium();
+  generateForm();
   document.getElementById("generation").style.visibility = "visible";
-  document.getElementById("button").style.marginTop = "100px";
-
+  document.getElementById("button").style.marginTop = "50px";
+  this.innerHTML = 'Générer un autre';
 };
